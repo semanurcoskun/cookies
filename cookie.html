@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cover">
+        <img src="https://www.southernliving.com/thmb/1nXApw4eCu0_IjJInCt3sDrVhSk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Monster_Cookies_010-2996b6446e834ad1b093ef08b6828160.jpg" alt="">
+    </div>
+    <div class = "box">
+        <h1>Cookies Consent</h1>
+        <h4>This website uses cookies to improve user experience. <a href="#">Read more...</a></h4>
+        <div class="buttons">
+            <button id = "accept">Accept</button>
+            <button id = "decline">Decline</button>
+        </div>
+    </div>
+    <script>
+    // Get the buttons and the box
+    const acceptBtn = document.getElementById("accept");
+    const declineBtn = document.getElementById("decline");
+    const box = document.querySelector(".box");
+
+    // Hide the box when either button is clicked
+    function hideConsentBox() {
+      box.style.display = "none";
+    }
+
+    acceptBtn.addEventListener("click", hideConsentBox);
+    declineBtn.addEventListener("click", hideConsentBox);
+  </script>
+</body>
+</html>
